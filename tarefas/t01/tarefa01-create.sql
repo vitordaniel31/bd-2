@@ -16,6 +16,8 @@ CREATE TABLE if not exists departamento (
 	FOREIGN KEY (cod_gerente) REFERENCES funcionario(codigo) on delete set null on update cascade
 );
 
+ALTER TABLE funcionario ADD FOREIGN KEY(cod_depto) REFERENCES departamento(codigo);
+
 CREATE TABLE if not exists projeto (
 	codigo serial,
 	nome varchar(50),
