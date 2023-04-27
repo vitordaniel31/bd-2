@@ -10,7 +10,7 @@ values ('Vitor', 'M', '2002-12-31', 5000, 1),('Ketlly', 'F', '2004-10-10', 3500,
 
 update departamento set cod_gerente = 1 where codigo = 1;
 update departamento set cod_gerente = 2 where codigo = 2;
-update departamento set cod_gerente = 3 where codigo = 3;
+update departamento set cod_gerente = 1 where codigo = 3;
 
 insert into projeto
 (nome, descricao, cod_responsavel, cod_depto, data_inicio, data_fim)
